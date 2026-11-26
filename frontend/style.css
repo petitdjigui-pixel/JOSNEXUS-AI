@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --background: #080d18;
+    --surface: #101a2b;
+    --surface-light: #17243a;
+    --gold: #d9ad53;
+    --gold-light: #f5d58c;
+    --white: #f4f6fb;
+    --muted: #9ba9bd;
+    --border: rgba(217, 173, 83, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--white);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.topbar {
+    min-height: 85px;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    background: rgba(8, 13, 24, 0.95);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(217, 173, 83, 0.15);
+}
+
+.brand h1,
+.footer-brand h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.brand h1 span,
+.footer-brand span {
+    color: var(--gold);
+}
+
+.brand small {
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.status {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 7px;
+    background: #d9ad53;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--gold);
+}
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 650px;
+    padding: 70px 0;
+    z-index: 2;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 17px;
+}
+
+.hero h2 {
+    font-size: clamp(32px, 5vw, 57px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.hero h2 span {
+    color: var(--gold-light);
+}
+
+.hero-description {
+    color: var(--muted);
+    max-width: 520px;
+    margin: 22px 0 30px;
+    font-size: 15px;
+}
+
+.primary-button {
+    background: linear-gradient(135deg, #f0cc7b, #b98735);
+    color: #101522;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 22px;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(217, 173, 83, 0.2);
+}
+
+.primary-button span {
+    margin-left: 12px;
+}
+
+.hero-orbit {
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid rgba(217, 173, 83, 0.35);
+    border-radius: 50%;
+    animation: rotate 18s linear infinite;
+}
+
+.orbit-one {
+    width: 250px;
+    height: 250px;
+}
+
+.orbit-two {
+    width: 190px;
+    height: 190px;
+    border-style: dashed;
+    animation-direction: reverse;
+}
+
+.orbit-center {
+    width: 90px;
+    height: 90px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(145deg, #f5d58c, #9d6e26);
+    color: #111827;
+    font-size: 45px;
+    font-weight: 900;
+    border-radius: 50%;
+    box-shadow: 0 0 60px rgba(217, 173, 83, 0.25);
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.discovery-section h2,
+.system-section h2 {
+    font-size: 27px;
+}
+
+.module-count {
+    color: var(--gold);
+    font-size: 11px;
+    border: 1px solid var(--border);
+    padding: 8px 13px;
+    border-radius: 30px;
+}
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.module-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 25px;
+    transition: 0.25s;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+    background: var(--surface-light);
+}
+
+.module-icon {
+    color: var(--gold-light);
+    font-size: 28px;
+    margin-bottom: 17px;
+}
+
+.module-card h3 {
+    font-size: 14px;
+    margin-bottom: 9px;
+    letter-spacing: 0.5px;
+}
+
+.module-card p {
+    color: var(--muted);
+    font-size: 12px;
+    min-height: 40px;
+    margin-bottom: 20px;
+}
+
+.module-card > span {
+    font-size: 9px;
+    color: var(--gold);
+    letter-spacing: 1px;
+}
+
+.brain-card {
+    border-color: rgba(245, 213, 140, 0.55);
+    background: linear-gradient(145deg, #17243a, #111827);
+}
+
+.discovery-section {
+    margin: 60px 0;
+    padding: 40px;
+    border: 1px solid var(--border);
+    background: linear-gradient(145deg, #101a2b, #0c1422);
+    border-radius: 16px;
+}
+
+.discovery-section > p:not(.eyebrow) {
+    color: var(--muted);
+    margin: 12px 0 25px;
+    font-size: 13px;
+}
+
+#discoveryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#domain,
+#question {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    color: var(--white);
+    background: #080d18;
+    font: inherit;
+}
+
+#question {
+    min-height: 110px;
+    resize: vertical;
+}
+
+#domain:focus,
+#question:focus {
+    border-color: var(--gold);
+}
+
+#discoveryForm .primary-button {
+    align-self: flex-start;
+}
+
+.analysis-result {
+    margin-top: 20px;
+    padding: 17px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.system-section {
+    padding: 40px 0 70px;
+}
+
+.system-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.system-panel > div {
+    background: var(--surface);
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.system-panel span {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.system-panel strong {
+    color: var(--gold-light);
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.footer-brand {
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+footer small {
+    font-size: 10px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 45px 0;
+    }
+
+    .hero-orbit {
+        width: 160px;
+        min-width: 160px;
+        height: 160px;
+    }
+
+    .orbit-one {
+        width: 155px;
+        height: 155px;
+    }
+
+    .orbit-two {
+        width: 120px;
+        height: 120px;
+    }
+
+    .orbit-center {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .modules-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .topbar {
+        padding: 15px 5%;
+    }
+
+    .status {
+        font-size: 8px;
+    }
+
+    .brand h1 {
+        font-size: 14px;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hero-content {
+        padding: 45px 0 20px;
+    }
+
+    .hero-orbit {
+        margin: 10px auto 25px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .section-heading h2,
+    .discovery-section h2,
+    .system-section h2 {
+        font-size: 21px;
+    }
+
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .discovery-section {
+        padding: 23px;
+    }
+
+    .system-panel {
+        grid-template-columns: 1fr;
+    }
+  }
