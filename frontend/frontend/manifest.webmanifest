@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "JOSNEXUS AI",
+  "short_name": "JOSNEXUS",
+  "description": "Plateforme d'intelligence artificielle multisectorielle",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080d18",
+  "theme_color": "#080d18",
+  "categories": [
+    "business",
+    "education",
+    "productivity",
+    "finance"
+  ]
+}
