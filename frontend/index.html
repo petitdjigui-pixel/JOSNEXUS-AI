@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#080d18">
+    <meta name="description" content="JOSNEXUS AI - Intelligence artificielle multisectorielle">
+
+    <title>JOSNEXUS AI | Intelligence Platform</title>
+
+    <link rel="manifest" href="/static/manifest.webmanifest">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-icon">J</div>
+            <div>
+                <h1>JOSNEXUS <span>AI</span></h1>
+                <small>INTELLIGENCE PLATFORM</small>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM INITIALIZING
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">THE NEXT GENERATION OF INTELLIGENCE</p>
+
+                <h2>
+                    CONNECTER LES DONNÉES.<br>
+                    <span>COMPRENDRE LE MONDE.</span>
+                </h2>
+
+                <p class="hero-description">
+                    Une intelligence multisectorielle pour analyser,
+                    comprendre et découvrir les opportunités du monde.
+                </p>
+
+                <button class="primary-button" id="exploreButton">
+                    EXPLORER JOSNEXUS <span>→</span>
+                </button>
+            </div>
+
+            <div class="hero-orbit">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit-center">J</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">INTELLIGENCE NETWORK</p>
+                    <h2>Nos domaines d'analyse</h2>
+                </div>
+                <span class="module-count">07 MODULES</span>
+            </div>
+
+            <div class="modules-grid" id="modulesGrid">
+
+                <article class="module-card">
+                    <div class="module-icon">◈</div>
+                    <h3>NEXUS FINANCE</h3>
+                    <p>Marchés financiers, trading et tendances.</p>
+                    <span>EN DÉVELOPPEMENT</span>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-icon">⚽</div>
+                    <h3>NEXUS SPORT</h3>
+                    <p>Statistiques, compétitions et performances.</p>
+                    <span>EN DÉVELOPPEMENT</span>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-icon">◎</div>
+                    <h3>NEXUS ECONOMY</h3>
+                    <p>Économie, monnaies et marchés mondiaux.</p>
+                    <span>EN DÉVELOPPEMENT</span>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-icon">▣</div>
+                    <h3>NEXUS COMMERCE</h3>
+                    <p>Produits, prix et opportunités commerciales.</p>
+                    <span>EN DÉVELOPPEMENT</span>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-icon">◉</div>
+                    <h3>NEXUS NEWS</h3>
+                    <p>Actualités et événements importants.</p>
+                    <span>EN DÉVELOPPEMENT</span>
+                </article>
+
+                <article class="module-card">
+                    <div class="module-icon">⌕</div>
+                    <h3>NEXUS DISCOVERY</h3>
+                    <p>Détection de tendances et de relations.</p>
+                    <span>EN DÉVELOPPEMENT</span>
+                </article>
+
+                <article class="module-card brain-card">
+                    <div class="module-icon">✧</div>
+                    <h3>NEXUS BRAIN</h3>
+                    <p>Le moteur central d'intelligence de la plateforme.</p>
+                    <span>EN DÉVELOPPEMENT</span>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="discovery-section" id="discovery">
+            <p class="eyebrow">NEXUS DISCOVERY ENGINE</p>
+            <h2>Une question. Plusieurs possibilités.</h2>
+
+            <p>
+                Soumets une question pour tester le premier système
+                de réception et d'analyse de JOSNEXUS AI.
+            </p>
+
+            <form id="discoveryForm">
+                <select id="domain">
+                    <option value="general">Tous les domaines</option>
+                    <option value="finance">Finance</option>
+                    <option value="sport">Sport</option>
+                    <option value="economy">Économie</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="news">Actualités</option>
+                </select>
+
+                <textarea
+                    id="question"
+                    placeholder="Écris ta question ici..."
+                    required
+                    minlength="3"
+                    maxlength="1000"
+                ></textarea>
+
+                <button type="submit" class="primary-button">
+                    ENVOYER LA DEMANDE →
+                </button>
+            </form>
+
+            <div id="analysisResult" class="analysis-result">
+                Les résultats apparaîtront ici.
+            </div>
+        </section>
+
+        <section class="system-section">
+            <p class="eyebrow">SYSTEM INFORMATION</p>
+            <h2>État de la plateforme</h2>
+
+            <div class="system-panel">
+                <div>
+                    <span>Serveur API</span>
+                    <strong id="apiStatus">Vérification...</strong>
+                </div>
+
+                <div>
+                    <span>Modules</span>
+                    <strong>07</strong>
+                </div>
+
+                <div>
+                    <span>Version</span>
+                    <strong>1.0.0</strong>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="brand footer-brand">
+            <div class="brand-icon">J</div>
+            <h3>JOSNEXUS <span>AI</span></h3>
+        </div>
+
+        <p>CONNECTER LES DONNÉES. COMPRENDRE LE MONDE.</p>
+        <small>© 2026 JOSNEXUS AI — Jospin Djigui</small>
+    </footer>
+
+    <script src="/static/app.js"></script>
+
+</body>
+                      </html>
+                      
